@@ -103,7 +103,8 @@ section .title::after{
 }
 /* navbar styling */
 .navbar{
-    position: fixed;
+    position: sticky !important;
+    top:0px;
     width: 100%;
     z-index: 999;
     padding: 30px 0;
