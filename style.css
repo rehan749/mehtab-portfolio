@@ -157,7 +157,7 @@ section .title::after{
 
 /* menu btn styling */
 .menu-btn{
-    color: #fff;
+    color: #000000;
     font-size: 23px;
     cursor: pointer;
     display: none;
@@ -721,6 +721,7 @@ footer span a:hover{
         display: inline-block;
         margin: 20px 0;
         font-size: 25px;
+        color: white;
     }
     .home .home-content .text-2{
         font-size: 70px;
