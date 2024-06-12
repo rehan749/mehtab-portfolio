@@ -301,6 +301,10 @@ section .title::after{
     background: #111;
     content: "what i provide";
 }
+
+.clients .title::after{
+    content: "testimonials";
+}
 .services .serv-content .card{
     width: calc(25% - 20px);
     background: #222;
@@ -760,6 +764,8 @@ footer span a:hover{
     }
 }
 
+
+
 @media (max-width: 690px) {
     .max-width{
         padding: 0 23px;
@@ -775,6 +781,9 @@ footer span a:hover{
     }
     .services .serv-content .card{
         width: 100%;
+    }
+    .navbar .active .menu-btn{
+        color: #ffff;
     }
 }
 
@@ -859,3 +868,284 @@ footer span a:hover{
       color: white;
   }
   }
+
+
+  .m-top5 {
+    margin-top: 50px;
+}
+
+.bg-parallax-2 {
+    background: #dc354545 no-repeat center top;
+    background-size: cover;
+    width: 100%;
+    float: left;
+    padding: 50px 0px 70px 0px;
+    position: absolute;
+}
+
+.m-bottom6 {
+    margin-bottom: 60px;
+}
+
+.sec-auto-margin {
+    text-align: center;
+}
+.sec-auto-margin {
+    float: none;
+    margin: auto;
+}
+
+.font-color.light {
+    color: crimson;
+}
+
+.font-color {
+    color: #17a2aa;
+}
+.sec-title-two {
+    text-align: center;
+    /* font-size: 150px; */
+    color: #e7e7e7;
+    font-weight: bold;
+}
+.m-top-11 {
+    margin-top: -110px;
+}
+.font30 {
+    font-size: 30px !important;
+}
+.font-white {
+    color: #FFF !important;
+}
+.font-thin-xs {
+    font-weight: 200 !important;
+}
+.title-line.white-line {
+    background-color: #000000;
+}
+
+.title-line {
+    background-color: #17a2aa;
+    height: 2px;
+    margin: 25px auto 10px auto;
+    padding: 0;
+    width: 70px;
+}
+
+
+.white-bg {
+    background: #fff none repeat scroll 0 0;
+    margin: 200px auto 0 !important;
+    overflow: hidden;
+    padding: 70px 0;
+    position: relative;
+    width: 100%;
+    z-index: 99;
+}
+.left-padd5 {
+    padding-left: 50px;
+}
+
+.address-info {
+    float: left;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.address-info .icon {
+    color: crimson;
+    float: left;
+    font-size: 45px;
+    text-align: left;
+    width: 80px;
+}
+.address-info .text-info {
+    color: #444444;
+}
+.m-bottom1 {
+    margin-bottom: 10px;
+}
+
+.pull-right {
+    float: right;
+}
+
+.right-padd5 {
+    padding-right: 50px;
+}
+
+.sky-form {
+    margin: 0;
+    outline: none;
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, .3); */
+    font: 13px / 1.55 'Lato', sans-serif;
+    color: #666;
+    overflow: hidden;
+}
+.sky-form fieldset {
+    display: block;
+    /* padding: 25px 30px 5px; */
+    padding: 0px;
+    border: none;
+    margin-top: 22px;
+    /* background: rgba(255, 255, 255, .9); */
+}
+.sky-form .label {
+    border-radius: 0;
+    font-size: 100%;
+    font-size: 14px;
+    text-align: left;
+    white-space: normal;
+    color: inherit;
+}
+
+.sky-form .label {
+    display: block;
+    margin-bottom: 6px;
+    line-height: 19px;
+    font-weight: 400;
+}
+.sky-form .state-error + em {
+    display: block;
+    margin-top: 6px;
+    padding: 0 1px;
+    font-style: normal;
+    font-size: 11px;
+    line-height: 15px;
+    color: #17a2aa;
+}
+.sky-form .input, .sky-form .select, .sky-form .textarea, .sky-form .radio, .sky-form .checkbox, .sky-form .toggle, .sky-form .button {
+    position: relative;
+    display: block;
+}
+.sky-form .icon-append, .sky-form .icon-prepend {
+    color: #ccc;
+}
+.sky-form .input input, .sky-form .select select, .sky-form .textarea textarea, .sky-form .radio i, .sky-form .checkbox i, .sky-form .toggle i, .sky-form .icon-append, .sky-form .icon-prepend {
+    border-color: #cdcdcd;
+    -ms-transition: border-color 0.3s;
+    -moz-transition: border-color 0.3s;
+    -webkit-transition: border-color 0.3s;
+}
+
+.sky-form .icon-append {
+    right: 5px;
+    padding-left: 3px;
+    border-left-width: 1px;
+    border-left-style: solid;
+}
+.sky-form .icon-append, .sky-form .icon-prepend {
+    position: absolute;
+    top: 5px;
+    width: 29px;
+    height: 29px;
+    font-size: 15px;
+    line-height: 29px;
+    text-align: center;
+}
+
+.sky-form .input input, .sky-form .select select, .sky-form .textarea textarea {
+    display: block;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    height: 39px;
+    padding: 6px 10px;
+    outline: none;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0;
+    background: #fff;
+    font: 15px / 23px 'Lato', sans-serif;
+    color: #404040;
+    appearance: normal;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+.sky-form sections, .sky-form .section {
+    margin-bottom: 16px;
+}
+
+.sky-form .textarea textarea {
+    height: auto;
+    resize: none;
+}
+
+.sky-form .button.button-secondary {
+    background-color: crimson;
+    padding-top: 0px;
+    padding-bottom: 0;
+}
+
+.sky-form .button {
+    float: right;
+    height: 45px;
+    overflow: hidden;
+    margin: 10px 0 0 0;
+    padding: 2px 25px;
+    outline: none;
+    border: 0;
+    font: 500 15px / 39px 'Lato', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.footer {
+    width: 100%;
+    float: left;
+    margin: 0;
+    color: #909090;
+}
+
+.copyrights {
+    background: #000000 none repeat scroll 0 0;
+    float: left;
+    margin: 0;
+    padding: 80px 0 50px;
+    width: 100%;
+}
+
+.sec-auto-margin {
+    float: none;
+    margin: auto;
+}
+
+ul.social-icons li {
+    display: inline-block;
+    margin: 0 5px 0 0;
+    padding: 0;
+}
+
+ul.social-icons li a {
+    background-color: #fff;
+    border-radius: 100%;
+    color: #9f9d9d;
+    float: left;
+    font-size: 14px;
+    height: 32px;
+    line-height: 32px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 32px;
+    transition: all 0.5s ease;
+}
+
+ul.social-icons li a:hover{
+    color: crimson;
+    transition: all 0.5s ease;
+    transform: scale(1.2);
+}
+
+.text-info h2,p{
+    color: #000000;
+}
+.left-padd5 {
+    padding-left: 50px !important;
+}
+.right-padd5 {
+    padding-right: 50px !important;
+}
