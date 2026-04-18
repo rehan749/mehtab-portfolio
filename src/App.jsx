@@ -11,9 +11,12 @@ import ChromaGrid from "./components/ChromaGrid/ChromaGrid";
 import ProjectModal from "./components/ProjectModal/ProjectModal"; // <-- IMPORT MODAL
 import Aurora from "./components/Aurora/Aurora";
 import AOS from 'aos';
-import ChatRoom from "./components/ChatRoom";
+// import ChatRoom from "./components/ChatRoom";
+import Experience from "./components/Experience";
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 // ..
+import myImage from "/assets/profile.png";
 AOS.init();
 
 function App() {
@@ -75,14 +78,14 @@ function App() {
         <div className="hero grid md:grid-cols-2 items-center pt-10 xl:gap-0 gap-6 grid-cols-1">
           <div className="animate__animated animate__fadeInUp animate__delay-3s">
             <div className="flex items-center gap-3 mb-6 bg bg-zinc-800 w-fit p-4 rounded-2xl">
-              <img src="./assets/faris1.png" className="w-10 rounded-md" />
+              <img src="./assets/profile.png" className="w-10 rounded-md" />
               <q>Avoid or just undertake it</q>
             </div>
             <h1 className="text-5xl font-bold mb-6">
-              <ShinyText text="Hi I'm Faris Edrik Prayoga" disabled={false} speed={3} className='custom-class' />
+              <ShinyText text="Hi I'm Mahtab Alam" disabled={false} speed={3} className='custom-class' />
             </h1>
             <BlurText
-              text="A passionate application and web developer dedicated to crafting modern, high-performance digital experiences through innovative and user-friendly solutions."
+              text="A passionate Web Developer and Desinger dedicated to crafting modern, high-performance digital experiences through innovative and user-friendly solutions."
               delay={150}
               animateBy="words"
               direction="top"
@@ -90,8 +93,8 @@ function App() {
             />
             <div className="flex items-center sm:gap-4 gap-2">
               <a 
-                href="./assets/CV.pdf" 
-                download="Faris_Edrik_Prayoga_CV.pdf" 
+                href="./assets/Mahtab-alam.pdf" 
+                download="Mahtab-alam-cv.pdf" 
                 className="font-semibold bg-[#1a1a1a] p-4 px-6 rounded-full border border-gray-700 hover:bg-[#222] transition-colors"
               >
                 <ShinyText text="Download CV" disabled={false} speed={3} className="custom-class" />
@@ -105,12 +108,12 @@ function App() {
           </div>
           <div className="md:ml-auto animate__animated animate__fadeInUp animate__delay-4s">
             <ProfileCard
-              name="Faris Edrik P"
+              name="Mahtab Alam"
               title="Web Developer"
-              handle="farisedrikp"
+              handle="Mahtab"
               status="Online"
               contactText="Contact Me"
-              avatarUrl="./assets/faris.png"
+              avatarUrl="./assets/web-developer.avif"
               showUserInfo={true}
               enableTilt={true}
               enableMobileTilt={false}
@@ -129,7 +132,12 @@ function App() {
                 </h2>
 
                 <BlurText
-                  text="I’m Faris Edrik Prayoga, a full-stack developer passionate about building modern, high-performance applications with an intuitive user experience. I enjoy working with the latest technologies like Artificial Intelligence, Machine Learning, and cloud-based development, blending creativity with precision to deliver impactful solutions. With over three years of experience and more than 20 completed projects, I’m committed to helping users and businesses grow in the digital era through functional, aesthetic, and scalable digital products."
+                  text="I’m Mahtab Alam, Experienced Web Developer skilled in designing, developing, and maintaining responsive websites
+and web applications. Strong expertise in HTML, CSS, JavaScript, PHP, MySQL, React, and
+WordPress. Proficient in managing hosting environments, domains, DNS, and SSL configurations,
+along with implementing effective SEO strategies. Committed to delivering clean, optimized, and
+secure code that enhances website performance, user experience, and reliability.
+"
                   delay={150}
                   animateBy="words"
                   direction="top"
@@ -139,7 +147,7 @@ function App() {
                 <div className="flex flex-col sm:flex-row items-center sm:justify-between text-center sm:text-left gap-y-8 sm:gap-y-0 mb-4 w-full">
                   <div>
                     <h1 className="text-3xl md:text-4xl mb-1">
-                      20<span className="text-violet-500">+</span>
+                      100<span className="text-violet-500">+</span>
                     </h1>
                     <p>Project Finished</p>
                   </div>
@@ -169,7 +177,7 @@ function App() {
 
             {/* Kolom kanan */}
             <div className="basis-full md:basis-5/12 pl-0 md:pl-8 overflow-hidden max-w-full flex justify-center ">
-              <Lanyard position={[0, 0, 15]} gravity={[0, -40, 0]} />
+              <img src={myImage} alt="card" className="w-full rounded-md max-w-sm" />
             </div>
           </div>
 
@@ -207,7 +215,8 @@ function App() {
         {/* tentang */}
 
         {/* Proyek */}
-        <div className="proyek mt-32 py-10" id="project" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"></div>
+        <Experience />
+        <div className="proyek mt-10 py-5" id="project" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"></div>
         <h1 className="text-center text-4xl font-bold mb-2" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Project</h1>
         <p className="text-base/loose text-center opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">Showcasing a selection of projects that reflect my skills, creativity, and passion for building meaningful digital experiences.</p>
         <div className="proyek-box mt-14" >
@@ -250,13 +259,62 @@ function App() {
           <div className="flex flex-col md:flex-row gap-8">
             {/* Chat Room di kiri */}
             <div className="flex-1 bg-zinc-800 p-6 rounded-md" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-once="true">
-              <ChatRoom />
+             
+
+<div 
+  className="flex-1 bg-zinc-800 p-8 rounded-md space-y-8 text-white"
+  data-aos="fade-up"
+  data-aos-duration="1000"
+  data-aos-delay="400"
+  data-aos-once="true"
+>
+
+  {/* Address */}
+  <div className="flex items-start gap-5">
+    <div className="w-16 h-16 flex items-center justify-center bg-white rounded-full">
+      <FaMapMarkerAlt className="text-black text-2xl" />
+    </div>
+    <div>
+      <h3 className="text-cyan-400 text-xl font-semibold">Address</h3>
+      <p className="text-gray-300 mt-1">
+        Noida
+      </p>
+    </div>
+  </div>
+
+  {/* Phone */}
+  <div className="flex items-start gap-5">
+    <div className="w-16 h-16 flex items-center justify-center bg-white rounded-full">
+      <FaPhoneAlt className="text-black text-2xl" />
+    </div>
+    <div>
+      <h3 className="text-cyan-400 text-xl font-semibold">Phone</h3>
+      <p className="text-gray-300 mt-1">
+        +91 7651817952
+      </p>
+    </div>
+  </div>
+
+  {/* Email */}
+  <div className="flex items-start gap-5">
+    <div className="w-16 h-16 flex items-center justify-center bg-white rounded-full">
+      <FaEnvelope className="text-black text-2xl" />
+    </div>
+    <div>
+      <h3 className="text-cyan-400 text-xl font-semibold">Email</h3>
+      <p className="text-gray-300 mt-1">
+        mahtab91250@gmail.com
+      </p>
+    </div>
+  </div>
+
+</div>
             </div>
 
             {/* Contact Form di kanan */}
             <div className="flex-1">
               <form
-                action="https://formsubmit.co/rissoppa21@gmail.com"
+                action="https://formsubmit.co/mahtab91250@gmail.com"
                 method="POST"
                 className="bg-zinc-800 p-10 w-full rounded-md"
                 autoComplete="off"
@@ -291,8 +349,8 @@ function App() {
                     <textarea
                       name="message"
                       id="message"
-                      cols="45"
-                      rows="7"
+                      cols="30"
+                      rows="3"
                       placeholder="Message..."
                       className="border border-zinc-500 p-2 rounded-md"
                       required
